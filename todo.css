@@ -100,7 +100,7 @@ ul li::before {
     border-radius: 50%;
     height: 35px;
     width: 35px;
-    background: url(/project/images/unchecked.png);
+    background: url(unchecked.png);
     background-size: cover;
     background-position: center;
     left: 8px;
@@ -115,7 +115,7 @@ ul li.selected {
 }
 
 ul li.selected::before {
-    background-image: url(/project/images/checked.png);
+    background-image: url(checked.png);
     border-radius: 50%;
     height: 28px;
     width: 28px;
