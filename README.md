@@ -15,15 +15,6 @@ A simple and interactive To-Do List Web Application built using HTML, CSS, and J
 2. CSS3 – Styling & layout
 3. JavaScript (Vanilla JS) – Functionality & logic
 
-📂 Project Structure
-📁 Todo-App
-│── index.html
-│── todo.css
-│── todo.js
-│── 📁 images
-│     ├── checked.png
-│     └── unchecked.png
-
 ⚙️ How It Works
 1. Add Task
 User enters text in input box
@@ -44,17 +35,17 @@ On page reload:
 list1.innerHTML = localStorage.getItem("data");
 
 📸 UI Preview (Description)
-Gradient background
-Centered card layout
-Rounded input field
-Stylish task list with check icons
+1. Gradient background
+2. Centered card layout
+3. Rounded input field
+4. Stylish task list with check icons
 
 💡 Key Concepts Used
-DOM Manipulation
-Event Handling
-Local Storage
-Dynamic Element Creation
-CSS Pseudo-elements (::before)
+1. DOM Manipulation
+2. Event Handling
+3. Local Storage
+4. Dynamic Element Creation
+5. CSS Pseudo-elements (::before)
 
 ▶️ How to Run
 1. Download or clone the project
