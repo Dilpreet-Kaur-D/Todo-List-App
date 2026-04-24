@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(233, 146, 92), rgb(255, 0, 174));
+    padding: 10px;
+}
+
+.todo {
+
+    /* display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center; */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 540px;
+    /* The element can shrink in small screens, but it cannot exceed the max-width value. */
+    margin: 100px auto 20px;
+    padding: 40px 30px 40px;
+    border: 2px solid rgb(248, 247, 247);
+    background-color: white;
+}
+
+.heading {
+    /* border: 2px solid black;
+    background-color: burlywood; */
+    color: rgb(65, 0, 48);
+    width: 300px;
+    height: 70px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+i {
+    color: chocolate;
+
+}
+
+.input1 {
+    /* border: 2px solid black;*/
+    background-color: #edeef0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+#inp {
+    flex: 1;
+    /*shorthand used for flex-grow/flex shrink/flex-basis*/
+    border: none;
+    outline: none;
+    /* removes the browser’s default focus outline, but we should always replace it with a custom focus style for accessibility. */
+    padding: 10px;
+    font-weight: 14px;
+    background: transparent;
+
+}
+
+#addbtn {
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 550;
+    background-color: white;
+    cursor: pointer;
+    background: rgb(65, 0, 48);
+    padding: 16px 50px;
+    color: white;
+}
+
+ul li {
+
+    list-style: none;
+    font-size: 17px;
+    padding: 15px 8px 15px 50px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before {
+    /* a virtual element(a CSS-generated element that does not exist in HTML) that appears before the content of every <li> */
+    position: absolute;
+    content: " ";
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    background: url(/project/images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 8px;
+    top: 8px;
+
+}
+
+ul li.selected {
+    /*select only those li which has selected classname*/
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.selected::before {
+    background-image: url(/project/images/checked.png);
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    background-size: cover;
+    background-position: center;
+    left: 8px;
+    top: 8px;
+    background-size: cover;
+    background-position: center;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+ 
+ul li span:hover{
+    background: #edeef0;
+    border-radius: 50%;
+}
